@@ -1,4 +1,7 @@
 import { useState, useEffect, useRef } from "react";
+const PepeMuka = new URL ('src/assets/FOTO KEMEJA PUTIH LATAR KUNING AFFAN POLRESTABES BANDUNG.jpg', import.meta.url).href;
+const PusdikminLemPol = new URL ('src/assets/Pusat_Pendidikan_Administrasi (4).png', import.meta.url).href;
+const RenaPol = new URL ('src/assets/RENA_POLRI (2).png', import.meta.url).href;
 
 // ========================================
 // 📝 TEMPLATE BIODATA MAHASISWA
@@ -52,10 +55,10 @@ const biodata = {
   pengalamanKerja: [
     {
       perusahaan: "Pusdikmin Lemdiklat Polri", // Isi nama instansi kamu
-      logoPerusahaan: "https://upload.wikimedia.org/wikipedia/commons/5/57/Pusat_Pendidikan_Administrasi.png", // Kosongkan, nanti kamu isi sendiri dengan logo instansi
+      logoPerusahaan: {PusdikminLemPol}, // Kosongkan, nanti kamu isi sendiri dengan logo instansi
       posisi: "Bamin Dalprogar Ur Perencanaan", // Isi jabatan/posisi kamu
       bidang: "Perencanaan",
-      logoBidang: "https://upload.wikimedia.org/wikipedia/commons/2/2c/RENA_POLRI.png", // Kosongkan, nanti kamu isi sendiri (emoji / URL gambar)
+      logoBidang: {RenaPol}, // Kosongkan, nanti kamu isi sendiri (emoji / URL gambar)
       tahun: "2024 - Sekarang", // Isi tahun mulai kerja
       tipeKerja: "POLRI",
       deskripsi:
@@ -247,7 +250,7 @@ function HeroSection() {
           <div className="profile-ring">
             <div className="w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center text-6xl md:text-7xl overflow-hidden">
               {/* Ganti emoji ini dengan foto kamu */}
-              <img src="src/assets/FOTO KEMEJA PUTIH LATAR KUNING AFFAN POLRESTABES BANDUNG.jpg" className="w-full h-full object-cover" />
+              <img src={PepeMuka} className="w-full h-full object-cover" />
 	      {/*👨‍🎓*/}
             </div>
           </div>
