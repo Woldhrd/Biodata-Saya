@@ -486,8 +486,9 @@ function WorkExperienceSection() {
 
                     {/* Bidang / Field with logo */}
                     <div className="flex items-center gap-2 mb-3">
-                    <img src={RenaPol} alt="Logo Bidang" className="w-6 h-6 object-contain" />
-                    <span className="w-6 h-6 rounded bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-[8px] text-purple-400/60"></span>
+                    <span className="w-6 h-6 rounded bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-[8px] text-purple-400/60">
+		    <img src={RenaPol} alt="Logo Bidang" className="w-6 h-6 object-contain" />
+		    </span>
                       )
                       <span className="px-3 py-1 rounded-lg text-xs font-medium bg-purple-500/15 text-purple-300 border border-purple-500/20">
                         Bidang: {kerja.bidang}
