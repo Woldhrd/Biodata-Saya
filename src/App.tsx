@@ -55,10 +55,10 @@ const biodata = {
   pengalamanKerja: [
     {
       perusahaan: "Pusdikmin Lemdiklat Polri", // Isi nama instansi kamu
-      logoPerusahaan: "http_trigger_PusdikminLemPol", // Kosongkan, nanti kamu isi sendiri dengan logo instansi
+      logoPerusahaan: "", // Kosongkan, nanti kamu isi sendiri dengan logo instansi
       posisi: "Bamin Dalprogar Ur Perencanaan", // Isi jabatan/posisi kamu
       bidang: "Perencanaan",
-      logoBidang: "http_trigger_RenaPol", // Kosongkan, nanti kamu isi sendiri (emoji / URL gambar)
+      logoBidang: "", // Kosongkan, nanti kamu isi sendiri (emoji / URL gambar)
       tahun: "2024 - Sekarang", // Isi tahun mulai kerja
       tipeKerja: "POLRI",
       deskripsi:
@@ -455,21 +455,7 @@ function WorkExperienceSection() {
                   {/* Company Logo */}
                   <div className="flex-shrink-0">
                     <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-indigo-600/30 to-purple-600/30 border border-indigo-500/20 flex items-center justify-center text-4xl md:text-5xl shadow-lg shadow-indigo-500/10 animate-pulse-glow overflow-hidden">
-                      {kerja.logoPerusahaan ? (
-                        kerja.logoPerusahaan.startsWith("http") ? (
-                          <img
-                            src={PusdikminLemPol}
-                            alt="Logo"
-                            className="w-full h-full object-contain p-2"
-                          />
-                        ) : (
-                          <span>{kerja.logoPerusahaan}</span>
-                        )
-                      ) : (
-                        <span className="text-xs text-indigo-400/60 text-center leading-tight">
-                          Isi Logo<br />Kamu
-                        </span>
-                      )}
+                    <img src={PusdikminLemPol} alt="Logo" className="w-full h-full object-contain p-2"/>
                     </div>
                   </div>
 
@@ -500,17 +486,9 @@ function WorkExperienceSection() {
 
                     {/* Bidang / Field with logo */}
                     <div className="flex items-center gap-2 mb-3">
-                      {kerja.logoBidang ? (
-                        kerja.logoBidang.startsWith("http") ? (
-                          <img src={RenaPol} alt="Logo Bidang" className="w-6 h-6 object-contain" />
-                        ) : (
-                          <span className="text-lg">{kerja.logoBidang}</span>
-                        )
-                      ) : (
-                        <span className="w-6 h-6 rounded bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-[8px] text-purple-400/60">
-                          📷
-                        </span>
-                      )}
+                    <img src={RenaPol} alt="Logo Bidang" className="w-6 h-6 object-contain" />
+                    <span className="w-6 h-6 rounded bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-[8px] text-purple-400/60"></span>
+                      )
                       <span className="px-3 py-1 rounded-lg text-xs font-medium bg-purple-500/15 text-purple-300 border border-purple-500/20">
                         Bidang: {kerja.bidang}
                       </span>
