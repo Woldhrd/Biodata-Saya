@@ -271,7 +271,7 @@ function HeroSection() {
           {biodata.universitas}
         </p>
         <p className="text-indigo-400/70 text-sm animate-fade-in-up delay-400">
-          NIM: {biodata.nim}
+          NPM: {biodata.nim}
         </p>
 
         {/* CTA Buttons */}
