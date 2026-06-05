@@ -55,6 +55,12 @@ const biodata = {
       jurusan: "Umum",
       deskripsi: "Aktif di organisasi Paskibra",
     },
+    {
+      tahun: "2013 - 2018",
+      institusi: "SD Negeri 190 Cisaranten Kidul",
+      jurusan: "Umum",
+      deskrips: "Awal mula mengeksplor ilmu",
+    },
   ],
 
   // --- Pengalaman Kerja ---
