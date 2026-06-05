@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-const PepeMuka = new URL ('src/assets/FOTO KEMEJA PUTIH LATAR KUNING AFFAN POLRESTABES BANDUNG.jpg', import.meta.url).href;
-const PusdikminLemPol = new URL ('src/assets/Pusat_Pendidikan_Administrasi (4).png', import.meta.url).href;
-const RenaPol = new URL ('src/assets/RENA_POLRI (2).png', import.meta.url).href;
+const PepeMuka = new URL ('/Foto_Saya.jpg', import.meta.url).href;
+const PusdikminLemPol = new URL ('/Pusdikmin_Lemdiklat.png', import.meta.url).href;
+const RenaPol = new URL ('/Rena_Polri.png', import.meta.url).href;
 
 // ========================================
 // 📝 TEMPLATE BIODATA MAHASISWA
@@ -458,7 +458,7 @@ function WorkExperienceSection() {
                       {kerja.logoPerusahaan ? (
                         kerja.logoPerusahaan.startsWith("http") ? (
                           <img
-                            src="src/assets/Pusat_Pendidikan_Administrasi (4).png"
+                            src={PusdikminLemPol}
                             alt="Logo"
                             className="w-full h-full object-contain p-2"
                           />
@@ -502,7 +502,7 @@ function WorkExperienceSection() {
                     <div className="flex items-center gap-2 mb-3">
                       {kerja.logoBidang ? (
                         kerja.logoBidang.startsWith("http") ? (
-                          <img src="src/assets/RENA_POLRI (2).png" alt="Logo Bidang" className="w-6 h-6 object-contain" />
+                          <img src={RenaPol} alt="Logo Bidang" className="w-6 h-6 object-contain" />
                         ) : (
                           <span className="text-lg">{kerja.logoBidang}</span>
                         )
