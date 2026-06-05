@@ -55,10 +55,10 @@ const biodata = {
   pengalamanKerja: [
     {
       perusahaan: "Pusdikmin Lemdiklat Polri", // Isi nama instansi kamu
-      logoPerusahaan: "", // Kosongkan, nanti kamu isi sendiri dengan logo instansi
+      logoPerusahaan: "http_trigger_PusdikminLemPol", // Kosongkan, nanti kamu isi sendiri dengan logo instansi
       posisi: "Bamin Dalprogar Ur Perencanaan", // Isi jabatan/posisi kamu
       bidang: "Perencanaan",
-      logoBidang: "", // Kosongkan, nanti kamu isi sendiri (emoji / URL gambar)
+      logoBidang: "http_trigger_RenaPol", // Kosongkan, nanti kamu isi sendiri (emoji / URL gambar)
       tahun: "2024 - Sekarang", // Isi tahun mulai kerja
       tipeKerja: "POLRI",
       deskripsi:
