@@ -32,10 +32,16 @@ const biodata = {
   // --- Pendidikan ---
   pendidikan: [
     {
-      tahun: "2024 - Sekarang",
+      tahun: "2025 - Sekarang",
       institusi: "Universitas Widyatama",
       jurusan: "S1 Akuntansi",
       deskripsi: "Kuliah sembari bekerja",
+    },
+    {
+      tahun: "2024",
+      institusi: "SPN Polda Jabar",
+      jurusan: "Diktuk Ba Polri Gel.II T.A.2024",
+      deskripsi: "Ditempa di Lembah Cisarua",
     },
     {
       tahun: "2021 - 2024",
@@ -76,11 +82,11 @@ const biodata = {
   // Keterangan: "Dasar" / "Menengah" / "Mahir" / "Lanjutan"
   keahlian: [
     { nama: "HTML & CSS", icon: "🌐", keterangan: "Menengah" },
-    { nama: "JavaScript", icon: "⚡", keterangan: "Menengah" },
+    { nama: "JavaScript", icon: "⚡", keterangan: "Dasar" },
     { nama: "React.js", icon: "⚛️", keterangan: "Dasar" },
     { nama: "Python", icon: "🐍", keterangan: "Dasar" },
     { nama: "Microsoft Office", icon: "📄", keterangan: "Mahir" },
-    { nama: "Desain Grafis", icon: "🎨", keterangan: "Menengah" },
+    { nama: "Desain Grafis", icon: "🎨", keterangan: "Dasar" },
   ],
 
   // --- Hobi & Minat ---
